@@ -1,0 +1,81 @@
+@import url("./style.css");
+@import url("./styles/header.css");
+@import url("./styles/catalog.css");
+@import url("./styles/main.css");
+@import url("./styles/footer.css");
+@import url("./styles/basket.css");
+@import url("./styles/list.css");
+@import url("./styles/reg-log.css");
+@import url("./styles/about.css");
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    font-family: montserrat;
+}
+
+body {
+    background: #333;
+    position: relative;
+    z-index: 5;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 50;
+    transition: .5s;
+}
+
+.preloader.done {
+    transform: translateY(-200%);
+    transition: .5s;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: url('../img/loader.gif') center / cover no-repeat;
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(../font/montserrat\ regular.ttf);
+}
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #B3AFB3;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #B3AFB3;
+}
+::-webkit-scrollbar-track{
+    background: #FFFFFF;
+}
